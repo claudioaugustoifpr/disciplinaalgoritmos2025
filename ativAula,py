@@ -1,0 +1,140 @@
+#Faça um programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
+# x = int(input("digite um numero: "))
+
+# if(x >= 0):
+#    print("O valor é positivo!")
+
+# else:
+#    print("O valor é  negativo!")
+
+#Faça um programa que peça dois números e imprima na tela somente o maior deles.
+
+# x = int(input("Digite um numero:"))
+# y = int(input("Digite outro numero:"))
+
+# if(x >= y):
+#    print(x,"é maior que",y)
+
+# else:
+#    print(y,"é menor que",x)
+
+# Faça um programa que peça a idade do usuário. 
+# Se ele for maior de idade, apresente a mensagem “Entrada permitida”. Se não, apresente “Entrada negada”.
+
+# idade = int(input("Digite sua idade:"))
+
+# if(idade >= 18):
+#     print("Voce é maior de idade / entrada permitida")
+
+# else:
+#     print("Voce é menor de idade / entrada negada")
+
+#Crie um programa que peça uma nota de trabalho e uma de prova (as duas de 0 a 100).
+# Se a média aritmética das notas for maior ou igual a 60, escreva “Aprovado”, se não, “Reprovado”.
+
+# prova = int(input("Digite o valor da prova:"))
+# trabalho = int(input("Digite o valor do trabalho:"))
+
+# media = (prova + trabalho)/2
+
+# if(media >= 60):
+#     print("Aprovado!")
+
+# else:
+#     print("Reprovado!")
+
+#Faça um programa que recebe o salário do usuário. Se o usuário recebe menos que um salário mínimo, 
+# apresente na tela uma mensagem informando isso a ele. Se o salário dele for maior que o salário mínimo,
+# calcule quantos salários mínimos ele ganha e informe na tela.
+# Considere o valor de R$1.212,00 para o salário mínimo neste exercício.
+# import math
+# salarioRecebido = float(input("Digite o valor Recebido:"))
+# salarioMin = 1212.00 
+# total = salarioRecebido / salarioMin
+
+
+# if(salarioRecebido > salarioMin):
+#     print(f"Voce recebe {math.ceil(total)} salario minimo")
+
+# else:
+#     print("Voce recebe menos que um salario minimo")
+
+#Faça um programa que verifique o sexo de uma pessoa. 
+# O usuário deve informar ‘F’ ou ‘M’ e o programa deve escrever “Feminino” ou “Masculino”, conforme a letra digitada.
+
+# sexo = str(input("Digite seu Sexo:")).upper()
+
+# if(sexo == "M"):
+#     print("Masculino")
+# else:
+#     if(sexo == "F"):
+#         print("Feminino")
+#     else:
+#         print("Sexo incorreto")
+
+# exercicio 21
+
+# x = int(input("informe o valor de x: "))
+# fx = 0
+# if(x < 2):
+#     fx = 1 / (2 - x)
+
+# else:
+#     if(x == 2):
+#         fx = 0
+    
+#     else:
+#         fx = 1 / (x - 2)
+
+# print(f"O resultado de x é: {fx}")
+
+# usuario = "ayslan"
+# senha = 123456
+
+# # ayslan ======== 1212
+
+# if(usuario == "ayslan" and senha == 1212):
+#     print("acesso permitido")
+
+# else:
+#     print("dados incorretos.")
+
+menu = """PIZZARIA BOM LAR\n
+1. Pedido
+2. Formas de Pagamento
+3. Reclamação
+4. Falar com o atendende
+OPCAO:"""
+opcao = int(input(menu))
+
+if(opcao == 1):
+    print("\n\n Tudo sobre o Pedido")
+    print("------------------------")
+    # quero novas opções de pedido
+    print("1. realizar pedido")
+    print("2. cancelar pedido")
+    print("3. consultar pedido")
+    print("4. voltar")
+
+
+    
+          
+    submenu = """opções do pedido\n
+    1. confirmar pedido
+    2. cancelar pedido"""
+    print(submenu)
+
+elif(opcao == 2):
+        print("2. Formas de Pagamento")
+
+elif(opcao == 3):
+      print("3. Reclamação")
+
+elif(opcao == 4):
+      print("4. falar como o atendente")
+
+else:
+      print("Opção Invalida.")
+
+
+
